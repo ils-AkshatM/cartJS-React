@@ -7,7 +7,7 @@ const ProductCard = ({ products = [] }) => {
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-wrap -m-4">
           {products.map((product) => {
-            console.log(product, "product");
+            // console.log(product, "product");
             const { id, title, price, description, category, image } = product;
             return (
               <Link to={`/products/${id}`} className="lg:w-1/4 md:w-1/2 p-4 w-full border border-opacity-50 mb-4 cursor-pointer">
