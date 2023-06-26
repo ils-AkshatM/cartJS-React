@@ -8,6 +8,8 @@ import Product from './modules/Product';
 import Products from './modules/Products';
 import CategoryProducts from './modules/CategoryProducts';
 import Cart from './modules/Cart';
+import ContactUs from './Components/ContactUs/Index';
+import Error from './Components/Error';
 
 const App = () => {
   return (
@@ -19,7 +21,8 @@ const App = () => {
         <Route path='/products' element={<Products/>} />
         <Route path='/categories/:name' element={<CategoryProducts/> } />
         <Route path='cart' element={<Cart/>} />
-        <Route path='*' element={<div>404</div>} />
+        <Route path='contact' element={<ContactUs/>} />
+        <Route path='*' element={<Error />} />
       </Routes>
       <Footer />
     </div>
